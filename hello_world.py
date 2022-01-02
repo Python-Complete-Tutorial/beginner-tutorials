@@ -3,6 +3,6 @@
 
 print("Hello, World!")  # outputs the thing in quotes
 
-print("My name is Kody Simpson and I think Python is pretty cool.")
+print('My name is Kody Simpson and I think Python is pretty cool.')
 
 print(23 * 3)
