@@ -38,9 +38,9 @@ elif favorite_color == "blood red":
 else:
     print("You have poor taste.")
 
-foods = ["pizza", "tacos", "sushi", "burritos", "chicken", "steak", "emily sternfield"]
 
 # If we are hungry, and the food we want is in the list, we can eat it.
+foods = ["pizza", "tacos", "sushi", "burritos", "chicken", "steak", "emily sternfield"]
 can_we_eat = False
 food_wanted = "tacos"
 am_hungry = True
@@ -49,7 +49,3 @@ if am_hungry and foods.count(food_wanted) > 0:
     can_we_eat = True
 
 print(f"Can we eat {food_wanted}? {can_we_eat}")
-
-############################################
-# Nested If Statements - If statements inside of if statements
-############################################

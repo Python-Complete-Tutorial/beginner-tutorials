@@ -56,4 +56,3 @@ fibonacci(69)
 # Let's write a function that returns a value. This gives the caller
 # of the function the opportunity to do whatever they want with the value.
 # Take the name, and make every other letter capitalized.
-def name_destroyer(name: str):
