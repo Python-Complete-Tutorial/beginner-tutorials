@@ -12,7 +12,16 @@ age = 20
 drinking_age = 21
 
 if age >= drinking_age:
-    print("You can enter the bar")
+    print("You can enter the bar") # the indentation is important to tell Python this statement is part of the if statement
+
+# another
+number = 4
+
+if number > 0:
+    print("Positive")
+
+if number % 2 == 0:
+    print("The number is even")
 
 # This gives your program a more dynamic nature. Your program can run code
 # differently depending on the values of your variables and the conditions being met.
