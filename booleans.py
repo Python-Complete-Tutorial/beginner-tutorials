@@ -48,34 +48,3 @@ print(False ^ False) # False
 # not - flips a bool value
 print(not True)   # False
 print(not False)  # True
-
-# Comparison Operators - "==", "!=", "<", ">", "<=", ">="
-# They can be used on values and produce a boolean value
-# Paired with boolean operators, you can make interesting boolean expressions
-
-print(True == True)         # True
-print(True == False)        # False
-print(69 == 45)             # False
-print("obama" == "cheese")  # False
-
-print(True != True)         # False
-print(True != False)        # True
-print(69 != 45)             # True
-print("obama" != "cheese")  # True
-
-print("obama" > "cheese")    # False
-print("obama" < "cheese")    # True
-print(45 < 69)               # True
-print(45 > 69)               # False
-print(45 <= 69)              # True
-print(45 >= 69)              # False
-print([1, 2, 3] < [1, 2, 4]) # True
-print([1, 2, 3] > [1, 2, 4]) # False
-
-# Combination of Comparison and Logical Operators
-# You can combine comparison and logical operators to make more complex boolean expressions
-age = 20
-am_i_old = (age >= 18) and (age <= 65) # two comparisons tied together
-am_i_really_old = age >= 65
-
-print(am_i_old)
