@@ -1,18 +1,24 @@
-# If Statements - a way to control the flow of your program execution
 
-# if <condition>:
-#   <block of code>
+# Challenge
+# Make a piece of code that takes a string and validates it by seeing if it has at least one letter and one number
+# If the string does not have at least one letter and one number, print "Invalid String"
+# If the string has at least one letter and one number, print "Valid String"
 
-# if, elif, else
+password = "1234g56789"
+letter_found = False
+number_found = False
+position = 0
 
-# If we are hungry, and the food we want is in the list, we can eat it.
-foods = ["pizza", "tacos", "sushi", "burritos", "chicken", "steak", "emily sternfield"]
-food_wanted = "tacos"
-am_hungry = False
-can_we_eat = False
+while position < len(password):
+    letter = password[position]
+    print(letter)
+    if letter.isalpha():
+        letter_found = True
+    if letter.isdigit():
+        number_found = True
+    position = position + 1
 
-if am_hungry and foods.count(food_wanted) > 0:
-    can_we_eat = True
-    print("Yes, the food you want is in the list and you can eat it.")
+if letter_found and number_found:
+    print("Valid Password")
 else:
-    print("You are either not hungry or the food you want is not on the list.")
+    print("Invalid Password")

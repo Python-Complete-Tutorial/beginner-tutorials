@@ -20,7 +20,7 @@ def fibonacci():
 # code in the function.
 fibonacci()
 
-# There is one downside to the function we created above.
+# There is one downside to the fibonacci function we created above.
 # The number that we are calculating the factorial of is
 # hard-coded into the function. If there was a way to
 # "pass in" a number, we could dynamically calculate the
@@ -45,14 +45,9 @@ fibonacci(69)
 # 1. Code Reuse - The code does not have to be completely rewritten every time we want to use it.
 # 2. Modularity - A piece of code that has a specific meaning or task is broken up into its own function.
 
-#################################################
-# Functions that "return" values
-#################################################
+# More random functions
+def add(num1, num2):
+    print("Adding", num1, "and", num2)
+    print("Result:", num1 + num2)
 
-# As you might have noticed, the functions that we used from Python
-# can sometimes give a value back. This is called a "return" value.
-# We can use the return value to do something else.
-
-# Let's write a function that returns a value. This gives the caller
-# of the function the opportunity to do whatever they want with the value.
-# Take the name, and make every other letter capitalized.
+add(5, 6)
