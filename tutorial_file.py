@@ -1,24 +1,10 @@
+## Passing Lists as Arguments to a Function
 
-# Challenge
-# Make a piece of code that takes a string and validates it by seeing if it has at least one letter and one number
-# If the string does not have at least one letter and one number, print "Invalid String"
-# If the string has at least one letter and one number, print "Valid String"
+names = ["Bruce", "Billy Bob", "Billy Bob Jr.", "Bobby", "Bobby Jr."]
 
-password = "1234g56789"
-letter_found = False
-number_found = False
-position = 0
+def add_prefix_to_names(strings):
+    for i in range(len(strings)):
+        strings[i] = "Mr. " + strings[i]
 
-while position < len(password):
-    letter = password[position]
-    print(letter)
-    if letter.isalpha():
-        letter_found = True
-    if letter.isdigit():
-        number_found = True
-    position = position + 1
-
-if letter_found and number_found:
-    print("Valid Password")
-else:
-    print("Invalid Password")
+add_prefix_to_names(names[:])
+print(names)

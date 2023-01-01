@@ -1,5 +1,16 @@
 # Functions
-# A function is a named group of a code.
+# A function is a named group of code.
+
+# The two main benefits of functions are:
+# 1. Code Reuse - The code does not have to be completely rewritten every time we want to use it.
+# 2. Modularity - A piece of code that has a specific meaning or task is broken up into its own function.
+
+# Defining a function:
+def function_name():
+    print("Hello World")
+
+# Calling a function:
+function_name()
 
 # In a previous video, we made a chunk of code that
 # prints the factorial of a number.
@@ -7,7 +18,7 @@
 # and paste it. That's a lot of typing. And is wack.
 
 # Here is where a function comes in.
-def fibonacci():
+def calculate_factorial():
     num = 500
     factorial = 1
     for i in range(1, num + 1):
@@ -18,36 +29,31 @@ def fibonacci():
 # Now, when we want to calculate the factorial of a number,
 # we "call" the function. This has the effect of running the
 # code in the function.
-fibonacci()
+calculate_factorial()
 
-# There is one downside to the fibonacci function we created above.
-# The number that we are calculating the factorial of is
-# hard-coded into the function. If there was a way to
-# "pass in" a number, we could dynamically calculate the
-# factorial of any number.
+# We can also call the function multiple times.
+calculate_factorial()
+calculate_factorial()
+calculate_factorial()
 
-# Let's rewrite the function to take in a number.
-def fibonacci(num):
-    factorial = 1
-    for i in range(1, num + 1):
-        factorial *= i
+# Here is a function that will print my name in a box.
+def print_name():
+    print("##########")
+    print("# Kody Simpson #")
+    print("##########")
 
-    print("Factorial of", num, "is", factorial)
+print_name()
 
-# Now, we call the function but as we are calling it
-# we also give it a number as its "argument".
-fibonacci(5)
-fibonacci(700)
-fibonacci(69)
-
-# BOOM! Really cool right? We can now calculate the factorial of any number and print it out.
-# The two main benefits of functions are:
-# 1. Code Reuse - The code does not have to be completely rewritten every time we want to use it.
-# 2. Modularity - A piece of code that has a specific meaning or task is broken up into its own function.
-
-# More random functions
-def add(num1, num2):
+# Here is a function that will add two numbers and print the result.
+def add():
+    num1 = 5
+    num2 = 6
     print("Adding", num1, "and", num2)
     print("Result:", num1 + num2)
 
-add(5, 6)
+add()
+
+# There is one downside to the add function we created above.
+# The numbers that we are adding are hard-coded into the function.
+# If there was a way to "pass in" numbers
+# we could dynamically add any two numbers. That's where parameters come in.
